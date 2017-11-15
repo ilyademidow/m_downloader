@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.ilya.mdownloader.com.example.ilya.mdownloader.MainActivity">
+
+
+    <LinearLayout
+            android:id="@+id/main_layout"
+            android:layout_width="358dp"
+            android:layout_height="0dp"
+
+            tools:layout_editor_absoluteY="8dp"
+            tools:layout_editor_absoluteX="8dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+        <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:id="@+id/search_edit_text_field"
+                android:layout_marginTop="5dp"
+                android:hint="Type here author or soundTrack"/>
+        <Button
+                android:text="Search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:id="@+id/search_button"
+                android:layout_below="@+id/search_edit_text_field" android:layout_centerHorizontal="true"/>
+        <ScrollView
+                android:id="@+id/scroll1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" tools:layout_editor_absoluteY="8dp"
+                tools:layout_editor_absoluteX="8dp">
+            <LinearLayout
+                    android:id="@+id/scroll_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    tools:layout_editor_absoluteY="8dp"
+                    tools:layout_editor_absoluteX="8dp"
+                    android:gravity="center"
+                    android:orientation="vertical"/>
+        </ScrollView>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

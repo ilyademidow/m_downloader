@@ -1,0 +1,9 @@
+#Dir
+/.gradle
+/build
+/.idea
+/app/build/*
+
+#Files
+*.iml
+local.properties
