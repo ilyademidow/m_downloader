@@ -7,9 +7,9 @@ import android.support.constraint.ConstraintLayout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.*;
-import com.ilyademidow.mdownloader.R;
 import com.ilyademidow.mdownloader.controllers.web.MP3VC;
 import com.ilyademidow.mdownloader.models.SoundTrack;
+import com.example.ilya.mdownloader.R;
 
 import java.util.List;
 
