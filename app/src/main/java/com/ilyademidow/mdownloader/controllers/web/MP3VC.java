@@ -13,7 +13,8 @@ import java.util.List;
  * Class for interaction with http://mp3vc.ru
  */
 public class MP3VC {
-    private static final String URL = "http://mp3vc.ru/";
+    private static final String URL = "http://mp3-vc.ru/";
+    private static final int TIMEOUT = 10000; //10 sec
 
     /**
      * Request page by HTTP method GET and parse it by Jsoup
@@ -30,7 +31,7 @@ public class MP3VC {
                     + "/";
 
             // Parse the web-site
-            Element body = Jsoup.connect(searchingURL).postDataCharset("UTF-8").ignoreHttpErrors(true).get().body();
+            Element body = Jsoup.connect(searchingURL).timeout(TIMEOUT).postDataCharset("UTF-8").ignoreHttpErrors(true).get().body();
             for (Element track : body.getElementsByClass("track")) {
                 Element nameData = track.getElementsByClass("playlist-name").get(0);
                 // Convert from HTML to POJO

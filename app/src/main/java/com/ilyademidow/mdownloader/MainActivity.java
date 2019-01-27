@@ -1,8 +1,7 @@
 package com.ilyademidow.mdownloader;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import com.example.ilya.mdownloader.R;
+import android.support.v7.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 

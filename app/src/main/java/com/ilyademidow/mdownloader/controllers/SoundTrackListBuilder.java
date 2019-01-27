@@ -4,12 +4,13 @@ import android.app.Activity;
 import android.graphics.Color;
 import android.os.AsyncTask;
 import android.support.constraint.ConstraintLayout;
+import android.support.design.widget.Snackbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.*;
+import com.ilyademidow.mdownloader.R;
 import com.ilyademidow.mdownloader.controllers.web.MP3VC;
 import com.ilyademidow.mdownloader.models.SoundTrack;
-import com.example.ilya.mdownloader.R;
 
 import java.util.List;
 
@@ -44,6 +45,11 @@ public class SoundTrackListBuilder extends AsyncTask<String, Integer, String> {
     protected void onPostExecute(String s) {
         super.onPostExecute(s);
         rl.removeAllViews();
+        if(soundTracks.size() == 0) {
+            Snackbar.make(activity.findViewById(R.id.search_edit_text_field), R.string.no_song_found,
+                    Snackbar.LENGTH_SHORT)
+                    .show();
+        }
         for (final SoundTrack soundTrack : soundTracks) {
             rl.addView(buildLayout(soundTrack));
         }

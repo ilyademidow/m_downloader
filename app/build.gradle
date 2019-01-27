@@ -4,7 +4,7 @@ android {
     compileSdkVersion 23
     buildToolsVersion "26.0.2"
     defaultConfig {
-        applicationId "com.example.ilya.testandroid"
+        applicationId "com.ilyademidow.mdownloader"
         minSdkVersion 23
         targetSdkVersion 23
         versionCode 1
