@@ -4,7 +4,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="com.example.ilya.mdownloader.com.example.ilya.mdownloader.MainActivity">
+        tools:context="com.ilyademidow.mdownloader.MainActivity">
 
 
     <LinearLayout
@@ -20,11 +20,9 @@
         <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textMultiLine"
+                android:inputType="textPersonName"
                 android:ems="10"
-                android:id="@+id/search_edit_text_field"
-                android:layout_marginTop="5dp"
-                android:hint="Type here author or sound name"/>
+                android:id="@+id/search_edit_text_field" android:hint="type here author or song name"/>
         <Button
                 android:text="Search"
                 android:layout_width="wrap_content"
@@ -46,7 +44,8 @@
                     tools:layout_editor_absoluteY="8dp"
                     tools:layout_editor_absoluteX="8dp"
                     android:gravity="center"
-                    android:orientation="vertical"/>
+                    android:orientation="vertical">
+            </LinearLayout>
         </ScrollView>
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
